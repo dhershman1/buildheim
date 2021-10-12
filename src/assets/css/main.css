@@ -1,0 +1,25 @@
+:root {
+  --accent: hsl(5, 100%, 81%);
+  --compliment: hsl(46, 74%, 92%);
+  --primary: hsl(168, 69%, 84%);
+  --secondary: hsl(188, 45%, 78%);
+  --background: hsl(222, 10%, 41%);
+  --danger: hsl(5, 100%, 56%);
+  --info: hsl(188, 45%, 52%);
+  --success: hsl(134, 61%, 41%);
+  --border: hsl(0, 0%, 88%);
+  --disabled: hsl(0, 0%, 69%);
+  /* cb == color blind */
+
+  --cb-protanopia-accent: hsl(59, 42%, 74%);
+  --cb-protanopia-compliment: hsl(60, 53%, 93%);
+  --cb-protanopia-primary: hsl(240, 33%, 86%);
+  --cb-protanopia-secondary: hsl(238, 31%, 81%);
+  --cb-protanopia-background: hsl(240, 7%, 40%);
+
+  --cb-deuteranopia-accent: hsl(66, 56%, 76%);
+  --cb-deuteranopia-compliment: hsl(60, 56%, 93%);
+  --cb-deuteranopia-primary: hsl(248, 42%, 85%);
+  --cb-deuteranopia-secondary: hsl(247, 34%, 80%);
+  --cb-deuteranopia-background: hsl(244, 7%, 40%);
+}
