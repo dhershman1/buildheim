@@ -5,6 +5,7 @@ import router from './router'
 import store from './store'
 
 import 'ant-design-vue/dist/antd.css'
+import '@/assets/scss/main.scss'
 
 createApp(App)
   .use(Antd)
