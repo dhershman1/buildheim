@@ -23,17 +23,16 @@ jobs:
       id: node-module-cache
       uses: actions/cache@v2
       with:
-        path: |
-            node_modules
-            */*/node_modules
-        key: ${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          path: |
+              node_modules
+              */*/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+    - name: Install Dependencies
+      if: steps.node-module-cache.outputs.cache-hit != 'true'
+      run: npm ci
 
-      - name: Install Dependencies
-        if: steps.node-module-cache.outputs.cache-hit != 'true'
-        run: npm ci
-
-      - name: Test
-        run: npm run test:unit
+    - name: Test
+      run: npm run test:unit
   lint:
     runs-on: ubuntu-latest
     strategy:
