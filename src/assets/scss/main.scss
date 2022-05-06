@@ -1,12 +1,21 @@
 @import './variables.scss';
+@import './login.scss';
 
 html,
 body,
 .ant-layout {
   height: 100%;
+  background-color: $latte;
 }
 
 #app {
   height: 100vh;
   font-family: 'Manrope', sans-serif;
+}
+
+.content {
+  height:100%;
+  background-color: $lightgrey;
+  color: $jet;
+  padding: 2rem;
 }
