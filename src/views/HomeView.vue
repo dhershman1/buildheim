@@ -12,25 +12,15 @@
         <p>Something something, booze and unlimited power!</p>
       </template>
     </preview-card>
-    <basic-card
-      title="hello"
-      size="sm"
-    >
-      <template #content>
-        <p>Content</p>
-      </template>
-    </basic-card>
   </div>
 </template>
 
 <script>
-import BasicCard from '@/components/BasicCard'
 import PreviewCard from '@/components/PreviewCard'
 
 export default {
   name: 'HomeView',
   components: {
-    BasicCard,
     PreviewCard
   }
 }
