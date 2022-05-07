@@ -1,21 +1,37 @@
 @import './variables.scss';
 @import './login.scss';
+@import './navbar.scss';
+@import './card.scss';
 
 html,
-body,
-.ant-layout {
+body {
   height: 100%;
-  background-color: $latte;
+  margin: 0;
 }
 
-#app {
+.container {
+  display: grid;
+  grid-template-areas: 'header'
+                       'main'
+                       'footer';
+  grid-template-rows: 0fr 1fr 0fr;
   height: 100vh;
+  color: $jet;
+  background-color: $lightgrey;
   font-family: 'Manrope', sans-serif;
 }
 
-.content {
-  height:100%;
-  background-color: $lightgrey;
-  color: $jet;
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+main {
+  grid-area: main;
   padding: 2rem;
 }
