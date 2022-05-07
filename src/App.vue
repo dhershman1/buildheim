@@ -1,18 +1,30 @@
 <template>
-  <section>
-    <router-link to="/">
-      Home
-    </router-link>
-    <router-link to="/about">
-      About
-    </router-link>
-    <router-link to="/upload">
-      Upload
-    </router-link>
-    <router-link to="/profile">
-      Profile
-    </router-link>
-    <router-view />
+  <section class="container">
+    <header class="navbar">
+      <router-link to="/">
+        Home
+      </router-link>
+      <router-link to="/about">
+        About
+      </router-link>
+      <router-link to="/upload">
+        Upload
+      </router-link>
+      <router-link to="/profile">
+        Profile
+      </router-link>
+    </header>
+    <main>
+      <router-view />
+    </main>
+    <footer>
+      <p>
+        Made with &#128151; by <a
+          href="https://github.com/dhershman1"
+          target="_blank"
+        >Dustin Hershman</a> &copy; 2022
+      </p>
+    </footer>
   </section>
 </template>
 <script>
