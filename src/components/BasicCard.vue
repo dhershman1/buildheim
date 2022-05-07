@@ -1,6 +1,9 @@
 <template>
   <div :class="cardClass">
-    <section class="card__title">
+    <section
+      v-show="title"
+      class="card__title"
+    >
       <p>{{ title }}</p>
     </section>
     <section class="card__content">
@@ -14,11 +17,11 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Title'
+      default: null
     },
     size: {
       type: String,
-      default: 'md'
+      default: 'full'
     }
   },
 
