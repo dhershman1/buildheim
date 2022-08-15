@@ -1,18 +1,28 @@
 <template>
   <section class="container">
     <header class="navbar">
-      <router-link to="/">
-        Home
-      </router-link>
-      <router-link to="/about">
-        About
-      </router-link>
-      <router-link to="/upload">
-        Upload
-      </router-link>
-      <router-link to="/profile">
-        Profile
-      </router-link>
+      <div class="brand">
+        <router-link to="/">
+          Buildheim
+        </router-link>
+      </div>
+      <div class="navbar__links">
+        <router-link to="/">
+          Home
+        </router-link>
+        <router-link to="/blueprints">
+          Blueprints
+        </router-link>
+        <router-link to="/about">
+          About
+        </router-link>
+        <router-link to="/upload">
+          Upload
+        </router-link>
+        <router-link to="/profile">
+          Profile
+        </router-link>
+      </div>
     </header>
     <main>
       <router-view />
@@ -32,21 +42,3 @@ export default {
 
 }
 </script>
-
-<style lang="scss" scoped>
-@import '@/assets/scss/variables.scss';
-
-.logo {
-  float: left;
-  width: 120px;
-  height: 32px;
-  margin: 16px 24px 16px 0;
-  .ant-typography {
-    color: $white;
-  }
-}
-
-.ant-layout-content {
-  background: $white;
-}
-</style>

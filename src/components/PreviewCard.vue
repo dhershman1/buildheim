@@ -46,7 +46,7 @@ export default {
     // TODO: Replace fake data with data from our DB
     fakeData () {
       return {
-        author: 'Dustin Hershman',
+        author: 'Killparadise',
         date: 'May 6th, 2022',
         tags: [
           { name: 'cool' },

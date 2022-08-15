@@ -35,3 +35,11 @@ main {
   grid-area: main;
   padding: 2rem;
 }
+
+.home {
+  display: grid;
+  grid-template-areas: 'aside news'
+                       'aside previews';
+  column-gap: 1rem;
+  grid-template-columns: 20% 80%;
+}
