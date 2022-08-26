@@ -30,6 +30,7 @@
     <footer>
       <p>
         Made with &#128151; by <a
+          class="link"
           href="https://github.com/dhershman1"
           target="_blank"
         >Dustin Hershman</a> &copy; 2022

@@ -3,7 +3,7 @@
     <account-card />
     <div class="news">
       <basic-card
-        :title="'News'"
+        :title="'Filters?'"
       >
         <template #content>
           <p>Hewwo</p>
@@ -11,6 +11,15 @@
       </basic-card>
     </div>
     <div class="previews">
+      <div>
+        <preview-card>
+          <template #preview-content>
+            <h1>Tavern Build</h1>
+            <h2>It's a Tavern! Whoa!</h2>
+            <p>Something something, booze and unlimited power!</p>
+          </template>
+        </preview-card>
+      </div>
       <div>
         <preview-card>
           <template #preview-content>
@@ -51,7 +60,7 @@ export default {
   .previews {
     grid-area: previews;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
   }
 
